@@ -24,11 +24,10 @@ print(X[X.duplicated(keep=False)])
 print("")
 
 '''
-'''
-# Plot distribution for each variable
-sns.pairplot(X.describe())
 
-'''
+# Plot distribution for each variable
+sns.pairplot(X)
+
 '''
 # Plot distribution for each variable
 for col in X.describe().columns:
